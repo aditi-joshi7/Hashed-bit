@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header */
+.header {
+    background: #ff6f3c;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    line-height: 1.1;
+}
+
+.logo .brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo small {
+    display: block;
+    font-size: 12px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-toggle {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;          
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    display: block;          
+    z-index: 1000;
+}
+
+/* when visible */
+.sidebar.show {
+    transform: translateX(0);
+}
+
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar h3 {
+    color: #ff6f3c;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    padding: 25px;
+    min-height: calc(100vh - 120px); 
+    box-sizing: border-box;
+}
+
+/* Content container */
+.content {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;  
+    width: 100%;
+    justify-content: center;  
+    flex-wrap: wrap;          
+}
+
+/* Individual boxes */
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /* Make boxes flexible */
+    flex: 1 1 300px;  
+    max-width: 350px;
+}
+
+/* Images inside boxes */
+.box img {
+    width: 100%;
+    height: auto;       
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

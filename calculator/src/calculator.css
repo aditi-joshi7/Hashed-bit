@@ -1,0 +1,78 @@
+/* Page background */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator box */
+.calculator {
+  width: 350px;
+  margin: 80px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.calculator h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.calculator input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Individual button colors */
+.add {
+  background-color: #4caf50;
+}
+
+.subtract {
+  background-color: #f44336;
+}
+
+.multiply {
+  background-color: #2196f3;
+}
+
+.divide {
+  background-color: #ff9800;
+}
+
+/* Hover effect */
+.buttons button:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Result */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444;
+}
